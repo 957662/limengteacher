@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-indigo-600">物理实验模拟教学</h1>
+              <h1 className="text-2xl font-bold text-indigo-600">李老师物理实验模拟教学</h1>
             </div>
             <div className="flex items-center">
               <a href="#about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100 transition-all duration-300">关于我们</a>
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">交互式实验</h3>
-              <p className="text-gray-600">通过阿里闪灵制作的实验模拟，让学生亲自动手操作</p>
+              <p className="text-gray-600">通过图形化的实验模拟，让学生亲自动手操作</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -262,7 +262,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="mb-2">人教版九年级物理课程 - 实验模拟教学</p>
-            <p className="text-gray-400 text-sm">© 2025 物理实验模拟教学平台. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2025 物理实验模拟教学平台. Everything be easy.</p>
           </div>
         </div>
       </footer>
