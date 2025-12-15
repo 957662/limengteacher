@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "物理实验模拟教学",
+  title: "李老师物理实验模拟教学",
   description: "人教版九年级物理课程 - 实验模拟教学平台",
 };
 
