@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* 基础样式 */
+body {
+  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* 页面过渡动画 */
+* {
+  transition: all 0.3s ease;
+}
+
+/* 导航链接样式 */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #667eea;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* 按钮样式增强 */
+button, a.inline-block {
+  position: relative;
+  overflow: hidden;
+}
+
+button::before, a.inline-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+button:hover::before, a.inline-block:hover::before {
+  left: 100%;
+}
+
+/* 章节卡片样式 */
+.chapter-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.chapter-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.chapter-card:active {
+  transform: translateY(-4px) scale(0.99);
+}
+
+/* 实验模拟链接样式 */
+.simulation-link {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.simulation-link:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #68408f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.simulation-link:active {
+  transform: translateY(0);
+}
+
+/* 滚动到顶部按钮样式 */
+#scrollToTop {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 知识点卡片样式 */
+.bg-indigo-50 {
+  transition: all 0.3s ease;
+}
+
+.bg-indigo-50:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* 侧边菜单样式 */
+aside a {
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 16px;
+}
+
+aside a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #667eea;
+  transition: width 0.3s ease;
+}
+
+aside a:hover::before {
+  width: 8px;
+}
+
+aside a.text-indigo-600::before {
+  width: 8px;
+}
+
+/* 章节标题样式 */
+.section-title {
+  border-bottom: 3px solid #667eea;
+}
+
+/* 页面加载动画 */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #667eea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.loading.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

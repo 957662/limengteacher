@@ -10,6 +10,9 @@ node_modules/
 dist/
 build/
 .output/
+.next/
+.nuxt/
+.vite/
 
 # Editor directories and files
 .vscode/
@@ -49,3 +52,32 @@ coverage/
 *.tmp
 *.temp
 .cache/
+
+# Next.js specific
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# pnpm
+pnpm-lock.yaml
+
+# Turborepo
+.turbo
