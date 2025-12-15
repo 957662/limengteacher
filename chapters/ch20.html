@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二十章 电与磁 - 物理实验模拟教学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .simulation-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .simulation-link:hover {
+            background: linear-gradient(135deg, #5a6fd8 0%, #68408f 100%);
+        }
+        .section-title {
+            border-bottom: 3px solid #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-indigo-600">物理实验模拟教学</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="../index.html#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100">关于我们</a>
+                    <a href="../index.html#chapters" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100">章节导航</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 章节标题 -->
+    <section class="bg-white py-8 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">第二十章</h1>
+                    <p class="text-gray-600 mt-2">电与磁</p>
+                </div>
+                <a href="../index.html#chapters" class="mt-4 md:mt-0 inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-300">返回章节列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 章节内容 -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- 侧边菜单 -->
+                <aside class="lg:col-span-1">
+                    <div class="bg-white rounded-xl shadow-md p-6 sticky top-8">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">章节导航</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#knowledge" class="text-gray-600 hover:text-indigo-600 block py-1">知识点讲解</a></li>
+                            <li><a href="#principles" class="text-gray-600 hover:text-indigo-600 block py-1">物理原理</a></li>
+                            <li><a href="#simulations" class="text-gray-600 hover:text-indigo-600 block py-1">实验模拟</a></li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4">章节列表</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="ch13.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十三章 内能</a></li>
+                            <li><a href="ch14.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十四章 内能的利用</a></li>
+                            <li><a href="ch15.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十五章 电流和电路</a></li>
+                            <li><a href="ch16.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十六章 电压 电阻</a></li>
+                            <li><a href="ch17.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十七章 欧姆定律</a></li>
+                            <li><a href="ch18.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十八章 电功率</a></li>
+                            <li><a href="ch19.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十九章 生活用电</a></li>
+                            <li><a href="ch20.html" class="text-indigo-600 font-medium hover:text-indigo-700 block py-1">第二十章 电与磁</a></li>
+                            <li><a href="ch21.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十一章 信息的传递</a></li>
+                            <li><a href="ch22.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十二章 能源与可持续发展</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- 主要内容 -->
+                <main class="lg:col-span-3 space-y-12">
+                    <!-- 知识点讲解 -->
+                    <section id="knowledge" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">知识点讲解</h2>
+                        <div class="space-y-6">
+                            <!-- 第1节 磁现象 磁场 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第1节 磁现象 磁场</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>磁性是物体吸引铁、钴、镍等物质的性质，具有磁性的物体叫磁体</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>磁体上磁性最强的部分叫磁极，磁体有两个磁极：南极（S极）和北极（N极）</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>磁极间的相互作用：同名磁极相互排斥，异名磁极相互吸引</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>磁场是磁体周围存在的一种特殊物质，它的基本性质是对放入其中的磁体产生力的作用</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>磁感线是描述磁场的假想曲线，在磁体外部，磁感线从N极出发回到S极</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第2节 电生磁 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第2节 电生磁</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电流的磁效应：通电导线周围存在磁场，磁场方向与电流方向有关</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>通电螺线管的磁场与条形磁体的磁场相似，其极性可以用安培定则（右手螺旋定则）判断</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>安培定则：用右手握住螺线管，让四指指向螺线管中电流的方向，则大拇指所指的那端就是螺线管的N极</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第3节 电磁铁 电磁继电器 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第3节 电磁铁 电磁继电器</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁铁是带有铁芯的螺线管，它的磁性有无由电流的通断控制，磁性强弱由电流大小和线圈匝数控制</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁继电器是利用电磁铁来控制工作电路的一种开关，它可以实现低电压、弱电流控制高电压、强电流</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第4节 电动机 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第4节 电动机</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>磁场对通电导线的作用：通电导线在磁场中会受到力的作用，力的方向与电流方向和磁场方向有关</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电动机是根据通电线圈在磁场中受力转动的原理制成的，它将电能转化为机械能</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>换向器的作用是使电动机线圈持续转动，它能自动改变线圈中的电流方向</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第5节 磁生电 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第5节 磁生电</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁感应现象：闭合电路的一部分导体在磁场中做切割磁感线运动时，导体中会产生感应电流</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>感应电流的方向与导体运动方向和磁场方向有关</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>发电机是根据电磁感应原理制成的，它将机械能转化为电能</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 物理原理 -->
+                    <section id="principles" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">物理原理</h2>
+                        <div class="space-y-6">
+                            <div class="text-gray-600 leading-relaxed">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">磁场的本质</h3>
+                                <p class="mb-4">磁场是一种看不见、摸不着但客观存在的物质，它是磁体间相互作用的媒介。磁场具有方向性，人们规定小磁针静止时北极所指的方向为该点的磁场方向。磁感线是用来描述磁场的假想曲线，它的疏密表示磁场的强弱，切线方向表示磁场的方向。</p>
+                                
+                                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">电与磁的相互转化</h3>
+                                <p class="mb-4">电与磁之间存在着密切的联系，主要体现在以下几个方面：</p>
+                                <ul class="list-disc pl-6 mb-6 space-y-2">
+                                    <li><strong>电流的磁效应</strong>：通电导线周围存在磁场，这是奥斯特实验发现的。这表明电能可以产生磁能。</li>
+                                    <li><strong>磁场对电流的作用</strong>：通电导线在磁场中会受到力的作用，这是电动机的工作原理。这表明磁能可以转化为机械能。</li>
+                                    <li><strong>电磁感应现象</strong>：闭合电路的一部分导体在磁场中做切割磁感线运动时，会产生感应电流，这是法拉第发现的。这表明机械能可以转化为电能。</li>
+                                </ul>
+                                
+                                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">电动机与发电机的对比</h3>
+                                <p class="mb-4">电动机和发电机是电与磁相互转化的典型应用，它们的工作原理和能量转化方向相反：</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <h4 class="font-semibold text-gray-800 mb-2">电动机</h4>
+                                        <ul class="list-disc pl-6 space-y-1">
+                                            <li>工作原理：通电线圈在磁场中受力转动</li>
+                                            <li>能量转化：电能 → 机械能</li>
+                                            <li>结构：定子、转子、换向器等</li>
+                                            <li>应用：电风扇、洗衣机、电动汽车等</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <h4 class="font-semibold text-gray-800 mb-2">发电机</h4>
+                                        <ul class="list-disc pl-6 space-y-1">
+                                            <li>工作原理：电磁感应现象</li>
+                                            <li>能量转化：机械能 → 电能</li>
+                                            <li>结构：定子、转子、滑环等</li>
+                                            <li>应用：火力发电、水力发电、风力发电等</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 实验模拟 -->
+                    <section id="simulations" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">实验模拟</h2>
+                        <div class="space-y-6">
+                            <!-- 实验1：探究磁体的性质 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验1：探究磁体的性质</h3>
+                                <p class="text-gray-600 mb-4">观察磁体的磁性分布，探究磁极间的相互作用规律，了解磁场的基本性质。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                            
+                            <!-- 实验2：探究电流的磁效应 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验2：探究电流的磁效应</h3>
+                                <p class="text-gray-600 mb-4">通过奥斯特实验，观察通电导线周围的磁场，探究电流方向对磁场方向的影响。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                            
+                            <!-- 实验3：探究电磁感应现象 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验3：探究电磁感应现象</h3>
+                                <p class="text-gray-600 mb-4">通过实验探究感应电流产生的条件，观察感应电流方向与导体运动方向和磁场方向的关系。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                            
+                            <!-- 实验4：电动机原理模拟 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验4：电动机原理模拟</h3>
+                                <p class="text-gray-600 mb-4">观察通电线圈在磁场中的受力转动，了解电动机的工作原理，探究换向器的作用。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="mb-2">人教版九年级物理课程 - 实验模拟教学</p>
+                <p class="text-gray-400 text-sm">© 2025 物理实验模拟教学平台. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "physics-education-website",
+  "version": "1.0.0",
+  "description": "人教版九年级物理课程实验模拟教学网站",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "physics",
+    "education",
+    "simulation",
+    "chinese",
+    "high-school"
+  ],
+  "author": "物理实验模拟教学平台",
+  "license": "MIT"
+}

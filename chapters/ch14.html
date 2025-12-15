@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十四章 内能的利用 - 物理实验模拟教学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .simulation-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .simulation-link:hover {
+            background: linear-gradient(135deg, #5a6fd8 0%, #68408f 100%);
+        }
+        .section-title {
+            border-bottom: 3px solid #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-indigo-600">物理实验模拟教学</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="../index.html#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100">关于我们</a>
+                    <a href="../index.html#chapters" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100">章节导航</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 章节标题 -->
+    <section class="bg-white py-8 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">第十四章</h1>
+                    <p class="text-gray-600 mt-2">内能的利用</p>
+                </div>
+                <a href="../index.html#chapters" class="mt-4 md:mt-0 inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-300">返回章节列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 章节内容 -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- 侧边菜单 -->
+                <aside class="lg:col-span-1">
+                    <div class="bg-white rounded-xl shadow-md p-6 sticky top-8">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">章节导航</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#knowledge" class="text-gray-600 hover:text-indigo-600 block py-1">知识点讲解</a></li>
+                            <li><a href="#principles" class="text-gray-600 hover:text-indigo-600 block py-1">物理原理</a></li>
+                            <li><a href="#simulations" class="text-gray-600 hover:text-indigo-600 block py-1">实验模拟</a></li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4">章节列表</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="ch13.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十三章 内能</a></li>
+                            <li><a href="ch14.html" class="text-indigo-600 font-medium hover:text-indigo-700 block py-1">第十四章 内能的利用</a></li>
+                            <li><a href="ch15.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十五章 电流和电路</a></li>
+                            <li><a href="ch16.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十六章 电压 电阻</a></li>
+                            <li><a href="ch17.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十七章 欧姆定律</a></li>
+                            <li><a href="ch18.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十八章 电功率</a></li>
+                            <li><a href="ch19.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十九章 生活用电</a></li>
+                            <li><a href="ch20.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十章 电与磁</a></li>
+                            <li><a href="ch21.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十一章 信息的传递</a></li>
+                            <li><a href="ch22.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十二章 能源与可持续发展</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- 主要内容 -->
+                <main class="lg:col-span-3 space-y-12">
+                    <!-- 知识点讲解 -->
+                    <section id="knowledge" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">知识点讲解</h2>
+                        <div class="space-y-6">
+                            <!-- 第1节 热机 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第1节 热机</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>热机是将内能转化为机械能的机器</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>常见的热机：蒸汽机、内燃机（汽油机、柴油机）、汽轮机、喷气发动机等</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>汽油机的工作过程：吸气冲程、压缩冲程、做功冲程、排气冲程</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>柴油机与汽油机的主要区别：燃料不同、点火方式不同、结构不同</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第2节 热机的效率 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第2节 热机的效率</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>燃料的热值：1kg某种燃料完全燃烧放出的热量，单位是J/kg</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>燃料燃烧放热公式：Q = qm 或 Q = qV（气体燃料）</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>热机的效率：用来做有用功的那部分能量与燃料完全燃烧放出的能量之比</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>提高热机效率的方法：减少各种热损失、使燃料充分燃烧、减小摩擦等</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第3节 能量的转化和守恒 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第3节 能量的转化和守恒</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>能量既不会凭空消灭，也不会凭空产生，它只会从一种形式转化为其他形式，或者从一个物体转移到其他物体，而在转化和转移的过程中，能量的总量保持不变</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>能量守恒定律是自然界最普遍、最重要的基本定律之一</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>各种形式的能量在一定条件下可以相互转化</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 物理原理 -->
+                    <section id="principles" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">物理原理</h2>
+                        <div class="space-y-6">
+                            <div class="text-gray-600 leading-relaxed">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">热机的工作原理</h3>
+                                <p class="mb-4">热机的基本工作原理是利用燃料燃烧产生的高温高压气体，推动活塞或涡轮转动，将内能转化为机械能。以汽油机为例，其工作循环包括四个冲程：</p>
+                                <ul class="list-disc pl-6 mb-6 space-y-2">
+                                    <li><strong>吸气冲程</strong>：进气门打开，排气门关闭，活塞向下运动，吸入汽油和空气的混合物</li>
+                                    <li><strong>压缩冲程</strong>：进气门和排气门都关闭，活塞向上运动，压缩燃料混合物，机械能转化为内能</li>
+                                    <li><strong>做功冲程</strong>：火花塞点火，燃料燃烧产生高温高压气体，推动活塞向下运动，内能转化为机械能</li>
+                                    <li><strong>排气冲程</strong>：进气门关闭，排气门打开，活塞向上运动，排出废气</li>
+                                </ul>
+                                
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">热机的效率</h3>
+                                <p class="mb-4">热机效率是衡量热机性能的重要指标。由于热机在工作过程中存在各种能量损失，如废气带走的能量、散热损失、机械摩擦损失等，所以热机的效率总是小于1。</p>
+                                <div class="bg-gray-50 rounded-lg p-4 mt-6">
+                                    <h4 class="font-semibold text-gray-800 mb-2">重要公式</h4>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center">
+                                            <span class="font-mono text-indigo-600 mr-2">燃料燃烧放热：</span>
+                                            <span>Q = qm 或 Q = qV</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <span class="font-mono text-indigo-600 mr-2">热机效率：</span>
+                                            <span>η = W<sub>有用</sub> / Q<sub>放</sub> × 100%</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="font-mono text-indigo-600 mr-2">其中：</span>
+                                            <span class="ml-2">Q表示热量（J），q表示热值（J/kg或J/m³），m表示质量（kg），V表示体积（m³），η表示效率，W<sub>有用</sub>表示有用功（J）</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">能量守恒定律</h3>
+                                <p class="mb-4">能量守恒定律是自然界的基本定律之一，它表明能量既不会凭空产生，也不会凭空消失，只会从一种形式转化为另一种形式，或者从一个物体转移到另一个物体，在转化和转移的过程中，能量的总量保持不变。</p>
+                                <p class="mb-4">能量守恒定律适用于所有的物理过程和化学过程，是我们研究自然现象的重要依据。</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 实验模拟 -->
+                    <section id="simulations" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">实验模拟</h2>
+                        <div class="space-y-6">
+                            <!-- 实验1：汽油机工作原理模拟 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验1：汽油机工作原理模拟</h3>
+                                <p class="text-gray-600 mb-4">观察汽油机的四个冲程，理解每个冲程的工作过程和能量转化。通过模拟实验，直观感受汽油机的工作原理。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                            
+                            <!-- 实验2：燃料热值的比较 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验2：燃料热值的比较</h3>
+                                <p class="text-gray-600 mb-4">通过实验比较不同燃料的热值，理解热值的物理意义。学习如何测量和计算燃料的热值。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="mb-2">人教版九年级物理课程 - 实验模拟教学</p>
+                <p class="text-gray-400 text-sm">© 2025 物理实验模拟教学平台. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

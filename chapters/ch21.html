@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二十一章 信息的传递 - 物理实验模拟教学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .simulation-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .simulation-link:hover {
+            background: linear-gradient(135deg, #5a6fd8 0%, #68408f 100%);
+        }
+        .section-title {
+            border-bottom: 3px solid #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-indigo-600">物理实验模拟教学</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="../index.html#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100">关于我们</a>
+                    <a href="../index.html#chapters" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100">章节导航</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 章节标题 -->
+    <section class="bg-white py-8 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">第二十一章</h1>
+                    <p class="text-gray-600 mt-2">信息的传递</p>
+                </div>
+                <a href="../index.html#chapters" class="mt-4 md:mt-0 inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-300">返回章节列表</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 章节内容 -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <!-- 侧边菜单 -->
+                <aside class="lg:col-span-1">
+                    <div class="bg-white rounded-xl shadow-md p-6 sticky top-8">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">章节导航</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#knowledge" class="text-gray-600 hover:text-indigo-600 block py-1">知识点讲解</a></li>
+                            <li><a href="#principles" class="text-gray-600 hover:text-indigo-600 block py-1">物理原理</a></li>
+                            <li><a href="#simulations" class="text-gray-600 hover:text-indigo-600 block py-1">实验模拟</a></li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4">章节列表</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="ch13.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十三章 内能</a></li>
+                            <li><a href="ch14.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十四章 内能的利用</a></li>
+                            <li><a href="ch15.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十五章 电流和电路</a></li>
+                            <li><a href="ch16.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十六章 电压 电阻</a></li>
+                            <li><a href="ch17.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十七章 欧姆定律</a></li>
+                            <li><a href="ch18.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十八章 电功率</a></li>
+                            <li><a href="ch19.html" class="text-gray-600 hover:text-indigo-600 block py-1">第十九章 生活用电</a></li>
+                            <li><a href="ch20.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十章 电与磁</a></li>
+                            <li><a href="ch21.html" class="text-indigo-600 font-medium hover:text-indigo-700 block py-1">第二十一章 信息的传递</a></li>
+                            <li><a href="ch22.html" class="text-gray-600 hover:text-indigo-600 block py-1">第二十二章 能源与可持续发展</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- 主要内容 -->
+                <main class="lg:col-span-3 space-y-12">
+                    <!-- 知识点讲解 -->
+                    <section id="knowledge" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">知识点讲解</h2>
+                        <div class="space-y-6">
+                            <!-- 第1节 现代顺风耳--电话 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第1节 现代顺风耳--电话</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电话的基本结构：由听筒和话筒组成</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>话筒的作用是将声信号转化为电信号，听筒的作用是将电信号转化为声信号</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电话交换机的作用是提高线路的利用率，实现任意两用户之间的通话</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电话分为模拟电话和数字电话，数字信号具有抗干扰能力强、失真小、易加密等优点</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第2节 电磁波的海洋 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第2节 电磁波的海洋</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁波是由迅速变化的电流产生的，它可以在真空中传播</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁波的传播速度等于光速，约为3×10⁸ m/s</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁波的波速c、波长λ和频率f的关系：c = λf</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电磁波谱包括无线电波、红外线、可见光、紫外线、X射线、γ射线等</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第3节 广播、电视和移动通信 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第3节 广播、电视和移动通信</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>无线电广播信号的发射由广播电台完成，接收由收音机完成</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>电视信号包括图像信号和声音信号，它们的发射和接收与无线电广播类似</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>移动电话既是无线电发射台又是无线电接收台，它通过基地台与电话网络连接</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- 第4节 越来越宽的信息之路 -->
+                            <div class="bg-indigo-50 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">第4节 越来越宽的信息之路</h3>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>微波通信：使用波长在1mm~10m之间的电磁波进行通信，需要建立中继站</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>卫星通信：利用通信卫星作为中继站，覆盖范围广，不受地理条件限制</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>光纤通信：利用激光在光导纤维中传输信号，具有传输容量大、抗干扰能力强等优点</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="inline-block w-2 h-2 bg-indigo-600 rounded-full mt-2 mr-3"></span>
+                                        <span>网络通信：利用互联网实现信息传递和资源共享</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 物理原理 -->
+                    <section id="principles" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">物理原理</h2>
+                        <div class="space-y-6">
+                            <div class="text-gray-600 leading-relaxed">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">电话的工作原理</h3>
+                                <p class="mb-4">电话的基本工作原理是通过话筒将声音信号转化为电信号，然后通过导线将电信号传输到远方的听筒，听筒再将电信号转化为声音信号。</p>
+                                <ul class="list-disc pl-6 mb-6 space-y-2">
+                                    <li><strong>话筒</strong>：当人对着话筒说话时，声波使膜片振动，膜片忽紧忽松地挤压碳粒，使电阻忽大忽小，在电路中产生了随声音变化的电流信号。</li>
+                                    <li><strong>听筒</strong>：电流通过电磁铁时，电磁铁的磁性忽强忽弱，吸引膜片忽紧忽松，将电信号转化为声音信号。</li>
+                                </ul>
+                                
+                                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">电磁波的产生与传播</h3>
+                                <p class="mb-4">电磁波是由迅速变化的电流产生的。当导体中的电流迅速变化时，导体周围会产生电磁波。电磁波可以在真空中传播，不需要介质，这是它与声波的重要区别。</p>
+                                <p class="mb-4">电磁波的传播速度等于光速，约为3×10⁸ m/s。电磁波的波速c、波长λ和频率f之间的关系为c = λf。不同频率的电磁波在真空中的传播速度相同，但波长不同，频率越高，波长越短。</p>
+                                
+                                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">各种通信方式的原理对比</h3>
+                                <p class="mb-4">不同的通信方式利用不同频率的电磁波或其他载体来传输信息：</p>
+                                <ul class="list-disc pl-6 mb-6 space-y-2">
+                                    <li><strong>无线电广播和电视</strong>：利用无线电波传输信号，需要通过发射台和接收设备进行信号的发送和接收。</li>
+                                    <li><strong>移动电话</strong>：利用微波传输信号，通过基地台与电话网络连接，实现随时随地通信。</li>
+                                    <li><strong>光纤通信</strong>：利用激光在光导纤维中全反射传输信号，具有传输容量大、抗干扰能力强、保密性好等优点。</li>
+                                    <li><strong>卫星通信</strong>：利用通信卫星作为中继站，覆盖范围广，适合远距离通信和全球通信。</li>
+                                </ul>
+                                
+                                <div class="bg-gray-50 rounded-lg p-4 mt-6">
+                                    <h4 class="font-semibold text-gray-800 mb-2">重要公式</h4>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center">
+                                            <span class="font-mono text-indigo-600 mr-2">电磁波波速公式：</span>
+                                            <span>c = λf</span>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="font-mono text-indigo-600 mr-2">其中：</span>
+                                            <span class="ml-2">c表示波速（3×10⁸ m/s），λ表示波长（m），f表示频率（Hz）</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 实验模拟 -->
+                    <section id="simulations" class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 section-title pb-2">实验模拟</h2>
+                        <div class="space-y-6">
+                            <!-- 实验1：电话的工作原理 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验1：电话的工作原理</h3>
+                                <p class="text-gray-600 mb-4">了解电话的基本结构和工作原理，观察话筒如何将声信号转化为电信号，听筒如何将电信号转化为声信号。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                            
+                            <!-- 实验2：电磁波的产生与传播 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验2：电磁波的产生与传播</h3>
+                                <p class="text-gray-600 mb-4">通过实验观察电磁波的产生，探究电磁波的传播特性，验证电磁波可以在真空中传播。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                            
+                            <!-- 实验3：光纤通信原理 -->
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-3">实验3：光纤通信原理</h3>
+                                <p class="text-gray-600 mb-4">了解光纤通信的基本原理，观察激光在光导纤维中的传输过程，理解全反射现象在光纤通信中的应用。</p>
+                                <a href="#" class="simulation-link inline-block text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">点击进入实验模拟</a>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="mb-2">人教版九年级物理课程 - 实验模拟教学</p>
+                <p class="text-gray-400 text-sm">© 2025 物理实验模拟教学平台. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
